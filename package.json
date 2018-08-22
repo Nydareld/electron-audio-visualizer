@@ -5,7 +5,8 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "build-win64" : "electron-packager . app --platform=win32 --arch=x64 --out=builds"
+    "serve": "gulp serve",
+    "build-win64": "electron-packager . app --platform=win32 --arch=x64 --out=builds"
   },
   "repository": "https://github.com/electron/electron-quick-start",
   "keywords": [
@@ -18,6 +19,8 @@
   "author": "GitHub",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "^2.0.0"
+    "electron": "^2.0.0",
+    "electron-connect": "^0.6.3",
+    "gulp": "^3.9.1"
   }
 }
