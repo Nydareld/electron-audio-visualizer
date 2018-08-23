@@ -4,7 +4,7 @@
   "description": "A minimal Electron application",
   "main": "main.js",
   "scripts": {
-    "start": "electron .",
+    "start": "electron . --enable-usermedia-screen-capturing --enable-experimental-web-platform-features",
     "serve": "gulp serve",
     "build-win64": "electron-packager . app --platform=win32 --arch=x64 --out=builds"
   },
@@ -16,6 +16,7 @@
     "tutorial",
     "demo"
   ],
+  "chromium-args" : "--enable-usermedia-screen-capturing --enable-experimental-web-platform-features",
   "author": "GitHub",
   "license": "CC0-1.0",
   "devDependencies": {
