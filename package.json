@@ -1,7 +1,7 @@
 {
-  "name": "electron-quick-start",
-  "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "name": "electron-audio-visualiser",
+  "version": "0.1.0",
+  "description": "audio visualiser for Streaming, built with electron",
   "main": "main.js",
   "scripts": {
     "start": "electron . --enable-usermedia-screen-capturing --enable-experimental-web-platform-features",
