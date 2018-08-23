@@ -1,12 +1,12 @@
 {
   "name": "electron-audio-visualiser",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "audio visualiser for Streaming, built with electron",
   "main": "main.js",
   "scripts": {
     "start": "electron . --enable-usermedia-screen-capturing --enable-experimental-web-platform-features",
     "serve": "gulp serve",
-    "build-win64": "electron-packager . app --platform=win32 --arch=x64 --out=builds"
+    "build-win64": "electron-packager . app --platform=win32 --arch=x64 --out=builds && zip builds/app-win32-x64.zip builds/app-win32-x64 -r "
   },
   "repository": "https://github.com/electron/electron-quick-start",
   "keywords": [
