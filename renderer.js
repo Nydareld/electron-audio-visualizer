@@ -9,8 +9,8 @@ var padding = 5;
 var WIDTH = canvas.width -padding ;
 var HEIGHT = canvas.height -padding;
 var barNumber = 27;
-var barWidth = (WIDTH / barNumber) -ecart;
 var ecart = 10;
+var barWidth = (WIDTH / barNumber) -ecart;
 
 onchange = function(stream) {
     console.log("here",stream);
@@ -110,7 +110,6 @@ function start(){
 
 
 window.onresize = function() {
-    console.log("here");
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
     WIDTH = canvas.width -padding ;
